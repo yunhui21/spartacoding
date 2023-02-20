@@ -1,26 +1,16 @@
-// let Spartan = App.loadSpritesheet('spartan.png', 64, 96, {
-//     left: [0, 1, 2, 3],
-//     up: [0],
-//     down: [0],
-//     right: [0, 1, 2, 3]
-// }, 8);
-// 르타인 캐릭터 넣기
+let _timer = 90;
+let _stateTimer = 0;
 
-// App.onSay.Add(function(Player, text){
-    
-//     if(text == 'speed up'){
-//         Player.moveSpeed = 400;
-//     }
-//     if(text == 'speed down'){
-//         Player.moveSpeed = 30;
-//     }
+App.onUpdate.Add(function(dt){
+	_stateTimer += dt;
+	
+	if(_stateTimer >= 1){
+		_stateTimer = 0;
+		_timer -= 1;
+	}
 
-//     App.showCenterLabel(message);
-
-// })
-// App.onJoinPlayer.Add(function(Player){
-
-//     // Player.Sprite = Spartan;
-//     // Player.sendUpdated();
-// })
-
+	
+	if(_timer <= 0){
+			// time over then...
+	}
+})
