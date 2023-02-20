@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+* {
+    /* * 을 사용하면 모두 포함됨 */
+    font-family: 'Jua', sans-serif;
+}
+.mystyle {
+    background-color: green;
+
+    width: 300px;
+    height: 200px;
+
+    border-radius:  10px;
+    color: white;
+
+    text-align: center;
+
+    padding-top: 30px;
+
+    background-image: url(https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.wrap {
+
+    width: 300px;
+    margin: 20px auto 0px auto;
+}
