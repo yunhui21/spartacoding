@@ -9,7 +9,10 @@
 
     <script>
         function hey() {
-            fetch("/test").then(res => res.json()).then(data => {
+            let formData = new FormData();
+            formData.append("title_give", "블랙팬서");
+
+            fetch("/test", { method: "POST", body: formData }).then(res => res.json()).then(data => {
                 console.log(data)
             })
         }
